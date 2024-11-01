@@ -1,0 +1,100 @@
+@import url(./styles/fonts.css);
+
+/* Tailwind Base, Components, and Utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Colors */
+:root {
+  /* dynamic colors  */
+  --background-color: #ffffff; /*Background color*/
+  --border-color: #dadcdf; /*Border color*/
+  --theme-color: #172568; /*Theme color*/
+  --text1-color: #1e1e1e; /*Text 1 color*/
+  --text2-color: #464646; /*Text 2 color*/
+
+  /* static colors */
+  --alice-blue: #f7faff;
+  --sandy-brown: #f8a866;
+  --ruddy-brown: #a55d26;
+  --gray: #808080e6;
+  --light-gray: #f0f0f0;
+}
+
+#tdp-rb {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text2-color);
+  border-color: var(--border-color);
+}
+
+/* scroll bar  */
+.tdprb-custom-scrollbar {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.tdprb-custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  background-color: var(--background-color);
+}
+.tdprb-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--border-color);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.tdprb-custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Loader  */
+
+/* skeleton loader  */
+
+.tdprb-skeleton-loader {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0.25turn,
+      transparent,
+      var(--background-color),
+      transparent
+    ),
+    linear-gradient(var(--border-color), var(--border-color)),
+    linear-gradient(var(--border-color), var(--border-color)),
+    linear-gradient(var(--border-color), var(--border-color));
+  background-color: var(--background-color);
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -215px 0, 0 0, 15px 150px, 15px 180px;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position: 215px 0, 0 0, 15px 150px, 15px 180px;
+  }
+}
+
+.tdprb-main-loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid gray;
+  border-bottom-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

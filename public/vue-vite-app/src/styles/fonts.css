@@ -1,0 +1,68 @@
+/* fonts.css */
+
+/* Lato  */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/Lato/Lato-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/Lato/Lato-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Lato/Lato-Bold.ttf") format("ttf");
+}
+
+/* Poppins  */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/Poppins/Poppins-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+}
+
+/* Tenor_Sans  */
+
+@font-face {
+  font-family: "TenorSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Tenor_Sans/TenorSans-Regular.ttf") format("ttf");
+}
